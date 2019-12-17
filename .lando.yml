@@ -1,0 +1,5 @@
+name: chidlrens_club
+recipe: drupal8
+config:
+  webroot: ./code/web
+  drush: "8"
