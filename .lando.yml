@@ -1,0 +1,20 @@
+name: chidlrens_club
+recipe: drupal8
+config:
+  webroot: ./code/web
+  drush: "8"
+  
+tooling:
+  'db-export [file]':
+    service: :host
+    description: Exports database from a database service to a file
+    cmd: /helpers/sql-export.sh
+    user: root
+    options:
+      host:
+        description: The database service to use
+        default: database
+        alias:
+          - h
+      stdout:
+        description: Dump database to stdout
