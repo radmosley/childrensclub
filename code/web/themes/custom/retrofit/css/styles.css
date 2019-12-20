@@ -1,0 +1,18 @@
+.region-header {
+    background-color: black;
+}
+
+.region-content {
+    background-color: gray;
+}
+
+.region-footer {
+    background-color: lightblue;
+    bottom: 0;
+    flex-shrink: 0;
+}
+
+.layout-container {
+    display: flexbox;
+    flex-direction: column;
+}
